@@ -9,7 +9,7 @@ import java.util.Properties;
 public class BaseAdLogKafkaProducer {
     public static void main(String[] args) {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "hadoop101:9092,hadoop102:9092,hadoop103:9092");
+        props.put("bootstrap.servers", "cdh1:9092,cdh2:9092,cdh3:9092");
         props.put("acks", "-1");
         props.put("batch.size", "16384");
         props.put("linger.ms", "10");
